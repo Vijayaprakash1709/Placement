@@ -1,8 +1,13 @@
 import java.util.*;
 public class Main {
     public static void main(String[] args ) {
-        int a=10,b=20;
-        System.out.println(++a + ++b + b);
-        //10 a++ = 10
+        Scanner sc=new Scanner(System.in);
+        double x=sc.nextDouble();
+        double n=sc.nextDouble();
+        double ans=1;
+        for(double i=1;i<=n;i++){
+            ans = ans * Math.pow(x,(n/i));
+        }
+        System.out.println(ans);
     }
 }
